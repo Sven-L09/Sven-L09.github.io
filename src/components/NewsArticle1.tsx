@@ -16,46 +16,71 @@ export function NewsArticle1({ onBack, onNavigateToArticle }: NewsArticle1Props)
     readTime: '8 min read',
     image: 'https://images.unsplash.com/photo-1609167782178-1ba3aa1eb251?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlc3BvcnRzJTIwZ2FtaW5nJTIwYXJlbmF8ZW58MXx8fHwxNzYwNjg5MjA2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
     content: `
-      <p>The latest patch brings significant changes to the League of Legends meta, with a focus on balancing champion power levels and introducing exciting new features that will reshape how you play the game.</p>
+      <div class="intro-highlight">
+        <p>Der neueste Patch bringt bedeutende Änderungen in die League of Legends Meta. Wir konzentrieren uns auf die Balance der Champion-Stärken und führen spannende neue Features ein, die Ihr Spielerlebnis grundlegend verändern werden.</p>
+      </div>
       
-      <h2>Champion Balance Changes</h2>
-      <p>This patch includes adjustments to over 30 champions across all roles. We've focused on bringing overperforming champions in line while giving underutilized picks the tools they need to succeed.</p>
+      <h2>⚔️ Champion Balance-Änderungen</h2>
+      <p>Dieser Patch beinhaltet Anpassungen an über 30 Champions in allen Rollen. Unser Fokus liegt darauf, übermächtige Champions auszugleichen und unterschätzten Picks die Werkzeuge zu geben, die sie zum Erfolg brauchen.</p>
       
-      <h3>Major Nerfs</h3>
-      <ul>
-        <li><strong>Ahri:</strong> Base damage reduced on Charm (E). Her ability to single-handedly dominate mid lane was too strong.</li>
-        <li><strong>Jinx:</strong> Attack speed growth decreased. She was scaling too well into late game.</li>
-        <li><strong>Thresh:</strong> Hook cooldown increased early game. Giving opponents more room to breathe in lane.</li>
-      </ul>
+      <div class="info-box nerf-box">
+        <h3>🔻 Wichtige Nerfs</h3>
+        <ul>
+          <li><strong>Ahri:</strong> Basis-Schaden von Bezauberung (E) reduziert. Ihre Fähigkeit, die Mid Lane allein zu dominieren, war zu stark.</li>
+          <li><strong>Jinx:</strong> Angriffstempo-Skalierung verringert. Sie wurde im Late Game zu mächtig.</li>
+          <li><strong>Thresh:</strong> Hook-Abklingzeit im Early Game erhöht. Dies gibt Gegnern mehr Raum zum Atmen in der Lane.</li>
+        </ul>
+      </div>
       
-      <h3>Major Buffs</h3>
-      <ul>
-        <li><strong>Viktor:</strong> Movement speed increased. Should help with his early game mobility issues.</li>
-        <li><strong>Garen:</strong> Base health regeneration buffed. Making him more sustainable in lane.</li>
-        <li><strong>Lux:</strong> Ultimate cooldown reduced at all ranks. More impactful in team fights.</li>
-      </ul>
+      <div class="info-box buff-box">
+        <h3>🔺 Wichtige Buffs</h3>
+        <ul>
+          <li><strong>Viktor:</strong> Bewegungsgeschwindigkeit erhöht. Dies sollte seine Early-Game-Mobilität verbessern.</li>
+          <li><strong>Garen:</strong> Basis-Lebensregeneration gebufft. Macht ihn nachhaltiger in der Lane.</li>
+          <li><strong>Lux:</strong> Ultimate-Abklingzeit auf allen Stufen reduziert. Mehr Impact in Teamkämpfen.</li>
+        </ul>
+      </div>
       
-      <h2>New Features</h2>
-      <p>We're introducing several quality of life improvements and new systems:</p>
+      <div class="section-divider"></div>
       
-      <h3>Enhanced Ping System</h3>
-      <p>The ping system has been completely overhauled with new contextual options and better visual clarity. Players can now communicate more effectively without voice chat.</p>
+      <h2>✨ Neue Features</h2>
+      <p>Wir führen mehrere Quality-of-Life-Verbesserungen und neue Systeme ein:</p>
       
-      <h3>Champion Mastery Updates</h3>
-      <p>Earn new mastery milestones and exclusive rewards for your dedication to specific champions. The new system tracks more detailed statistics and offers better progression feedback.</p>
+      <div class="feature-highlight">
+        <h3>📍 Verbessertes Ping-System</h3>
+        <p>Das Ping-System wurde komplett überarbeitet mit neuen kontextuellen Optionen und besserer visueller Klarheit. Spieler können jetzt effektiver kommunizieren, ohne Voice-Chat nutzen zu müssen.</p>
+        
+        <p class="feature-note">💡 <em>Tipp: Probiert die neuen Ping-Wheels aus, um schneller strategische Informationen zu teilen!</em></p>
+      </div>
       
-      <h2>Item Changes</h2>
-      <p>Several mythic items have been adjusted to promote build diversity:</p>
-      <ul>
-        <li>Infinity Edge: Critical strike damage increased from 210% to 220%</li>
-        <li>Liandry's Anguish: Burn damage scaling adjusted for better late game</li>
-        <li>Black Cleaver: Now provides additional movement speed on ability hits</li>
-      </ul>
+      <div class="feature-highlight">
+        <h3>🏆 Champion-Meisterschafts-Updates</h3>
+        <p>Verdient neue Meisterschafts-Meilensteine und exklusive Belohnungen für eure Hingabe zu bestimmten Champions. Das neue System trackt detailliertere Statistiken und bietet besseres Progressions-Feedback.</p>
+        
+        <p class="feature-note">💡 <em>Neu: Meisterschafts-Stufe 11-15 mit einzigartigen Belohnungen!</em></p>
+      </div>
       
-      <h2>Ranked Updates</h2>
-      <p>The ranked system receives improvements to matchmaking algorithms and LP gains/losses. The goal is to create fairer matches and more rewarding progression.</p>
+      <div class="section-divider"></div>
       
-      <p>These changes represent our commitment to keeping League of Legends fresh, balanced, and exciting. We'll continue monitoring the meta and making adjustments as needed throughout the season.</p>
+      <h2>🛡️ Item-Änderungen</h2>
+      <p>Mehrere mythische Items wurden angepasst, um Build-Vielfalt zu fördern:</p>
+      
+      <div class="item-changes">
+        <ul>
+          <li><strong>Infinity Edge:</strong> Kritischer Schaden erhöht von 210% auf 220%</li>
+          <li><strong>Liandry's Anguish:</strong> Brandschaden-Skalierung für besseres Late Game angepasst</li>
+          <li><strong>Black Cleaver:</strong> Gewährt jetzt zusätzliche Bewegungsgeschwindigkeit bei Fähigkeitstreffern</li>
+        </ul>
+      </div>
+      
+      <div class="section-divider"></div>
+      
+      <h2>🎮 Ranked-Updates</h2>
+      <p>Das Ranked-System erhält Verbesserungen bei Matchmaking-Algorithmen und LP-Gewinnen/-Verlusten. Das Ziel ist es, fairere Matches und lohnendere Progression zu schaffen.</p>
+      
+      <div class="closing-statement">
+        <p>Diese Änderungen repräsentieren unser Engagement, League of Legends frisch, ausgewogen und spannend zu halten. Wir werden die Meta weiterhin überwachen und bei Bedarf Anpassungen während der gesamten Saison vornehmen.</p>
+      </div>
     `,
   };
 
@@ -146,16 +171,35 @@ export function NewsArticle1({ onBack, onNavigateToArticle }: NewsArticle1Props)
             {/* Article Content */}
             <div
               className="
-                prose prose-lg max-w-none text-slate-300
-                prose-headings:text-white prose-headings:font-bold
-                prose-h2:text-3xl prose-h2:mb-6 prose-h2:mt-12 prose-h2:text-white prose-h2:border-b prose-h2:border-amber-500/30 prose-h2:pb-4
-                prose-h3:text-2xl prose-h3:mb-4 prose-h3:mt-8 prose-h3:text-amber-400
-                prose-p:text-slate-300 prose-p:mb-6 prose-p:leading-relaxed prose-p:text-lg
-                prose-ul:text-slate-300 prose-ul:mb-6 prose-ul:space-y-2
-                prose-li:mb-3 prose-li:text-slate-300 prose-li:leading-relaxed
-                prose-strong:text-amber-400 prose-strong:font-semibold
-                prose-a:text-amber-500 prose-a:underline prose-a:hover:text-amber-400
-                [&>h2]:first-of-type:mt-0
+                article-content text-slate-300 max-w-none
+                [&_h2]:text-3xl [&_h2]:font-bold [&_h2]:mb-6 [&_h2]:mt-12 [&_h2]:text-white [&_h2]:border-b [&_h2]:border-amber-500/30 [&_h2]:pb-4
+                [&_h3]:text-2xl [&_h3]:font-bold [&_h3]:mb-4 [&_h3]:mt-8 [&_h3]:text-amber-400
+                [&_p]:text-slate-300 [&_p]:mb-6 [&_p]:leading-relaxed [&_p]:text-lg
+                [&_ul]:text-slate-300 [&_ul]:mb-6 [&_ul]:space-y-2 [&_ul]:list-none
+                [&_li]:mb-3 [&_li]:text-slate-300 [&_li]:leading-relaxed [&_li]:pl-6 [&_li]:relative
+                [&_li]:before:content-['•'] [&_li]:before:absolute [&_li]:before:left-0 [&_li]:before:text-amber-500 [&_li]:before:font-bold
+                [&_strong]:text-amber-400 [&_strong]:font-semibold
+                [&_em]:text-cyan-400 [&_em]:not-italic
+                [&_a]:text-amber-500 [&_a]:underline hover:[&_a]:text-amber-400
+                [&>*:first-child]:mt-0
+                [&_.intro-highlight]:bg-gradient-to-r [&_.intro-highlight]:from-amber-500/10 [&_.intro-highlight]:to-transparent 
+                [&_.intro-highlight]:border-l-4 [&_.intro-highlight]:border-amber-500 [&_.intro-highlight]:pl-6 [&_.intro-highlight]:py-4 [&_.intro-highlight]:my-8 [&_.intro-highlight]:rounded-r
+                [&_.intro-highlight_p]:text-xl [&_.intro-highlight_p]:text-slate-200 [&_.intro-highlight_p]:mb-0
+                [&_.info-box]:rounded-lg [&_.info-box]:p-6 [&_.info-box]:my-8 [&_.info-box]:border-l-4
+                [&_.nerf-box]:bg-red-500/5 [&_.nerf-box]:border-red-500
+                [&_.buff-box]:bg-green-500/5 [&_.buff-box]:border-green-500
+                [&_.info-box_h3]:mt-0 [&_.info-box_h3]:mb-4 [&_.info-box_h3]:text-2xl [&_.info-box_h3]:font-bold
+                [&_.info-box_ul]:mb-0
+                [&_.section-divider]:h-px [&_.section-divider]:bg-gradient-to-r [&_.section-divider]:from-transparent 
+                [&_.section-divider]:via-amber-500/30 [&_.section-divider]:to-transparent [&_.section-divider]:my-12
+                [&_.feature-highlight]:bg-slate-800/30 [&_.feature-highlight]:rounded-lg [&_.feature-highlight]:p-6 [&_.feature-highlight]:my-6
+                [&_.feature-highlight]:border [&_.feature-highlight]:border-slate-700/50
+                [&_.feature-highlight_h3]:mt-0 [&_.feature-highlight_h3]:text-2xl [&_.feature-highlight_h3]:font-bold [&_.feature-highlight_h3]:text-amber-400
+                [&_.feature-note]:text-base [&_.feature-note]:text-amber-400/90 [&_.feature-note]:italic [&_.feature-note]:mt-4
+                [&_.item-changes]:bg-slate-800/20 [&_.item-changes]:rounded-lg [&_.item-changes]:p-6 [&_.item-changes]:border [&_.item-changes]:border-slate-700/30
+                [&_.closing-statement]:bg-gradient-to-r [&_.closing-statement]:from-amber-500/10 [&_.closing-statement]:to-transparent 
+                [&_.closing-statement]:border-l-4 [&_.closing-statement]:border-amber-500 [&_.closing-statement]:pl-6 [&_.closing-statement]:py-4 [&_.closing-statement]:mt-12 [&_.closing-statement]:rounded-r
+                [&_.closing-statement_p]:text-lg [&_.closing-statement_p]:text-slate-200 [&_.closing-statement_p]:mb-0 [&_.closing-statement_p]:font-medium
               "
               dangerouslySetInnerHTML={{ __html: featuredArticle.content }}
             />

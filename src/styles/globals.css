@@ -188,6 +188,25 @@ html {
   font-size: var(--font-size);
 }
 
+/* Verhindert weißen Hintergrund beim Overscroll (nach rechts/oben wischen) */
+html,
+body {
+  background-color: oklch(0.129 0.042 264.695); /* slate-950 */
+  overscroll-behavior: none;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+#root {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: oklch(0.129 0.042 264.695); /* slate-950 */
+}
+
 /* Custom Scrollbar für Modals */
 .custom-scrollbar::-webkit-scrollbar {
   width: 8px;
@@ -212,4 +231,47 @@ html {
 .custom-scrollbar {
   scrollbar-width: thin;
   scrollbar-color: rgba(245, 158, 11, 0.3) rgba(15, 23, 42, 0.5);
+}
+
+.article-content h2 {
+  font-size: 1.875rem; /* Tailwind text-3xl */
+  line-height: 2.25rem;
+  font-weight: 700;
+  margin: 3rem 0 1.5rem !important;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(245, 158, 11, 0.3);
+  padding-bottom: 1rem;
+}
+
+.article-content h3 {
+  font-size: 1.5rem; /* Tailwind text-2xl */
+  line-height: 2rem;
+  font-weight: 700;
+  margin: 2rem 0 1rem !important;
+  color: #fbbf24;
+}
+
+.article-content p {
+  font-size: 1.125rem; /* Tailwind text-lg */
+  line-height: 1.75rem;
+  margin-bottom: 1.5rem !important;
+  color: #cbd5e1; /* slate-300 */
+}
+
+/* Zusätzliche Basisabstände für Listen und Randfälle */
+.article-content ul,
+.article-content ol {
+  margin-bottom: 1.5rem; /* entspricht mb-6 */
+}
+
+.article-content li {
+  margin-bottom: 0.75rem; /* entspricht mb-3 */
+}
+
+/* Kein überflüssiger Außenabstand am Anfang/Ende des Artikels */
+.article-content > *:first-child {
+  margin-top: 0 !important;
+}
+.article-content > *:last-child {
+  margin-bottom: 0 !important;
 }

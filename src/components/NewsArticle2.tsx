@@ -16,55 +16,108 @@ export function NewsArticle2({ onBack, onNavigateToArticle }: NewsArticle2Props)
     readTime: '5 min read',
     image: 'https://images.unsplash.com/photo-1759701547467-a54a5e86a4f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21wZXRpdGl2ZSUyMGdhbWluZ3xlbnwxfHx8fDE3NjA2NzM4Njd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
     content: `
-      <p>The most prestigious League of Legends tournament of the year is back, and we're excited to announce the format for the 2025 World Championship. This year's tournament promises to be the biggest and most competitive yet.</p>
+      <div class="intro-highlight">
+        <p>Das prestigeträchtigste League of Legends Turnier des Jahres ist zurück! Wir freuen uns, das Format für die World Championship 2025 anzukündigen. Dieses Jahr verspricht das größte und kompetitivste Turnier aller Zeiten zu werden.</p>
+      </div>
       
-      <h2>Tournament Structure</h2>
-      <p>The 2025 Worlds will feature 24 teams from 11 different regions, competing over the course of five weeks for the Summoner's Cup and a prize pool of $2.5 million.</p>
+      <h2>🏆 Turnier-Struktur</h2>
+      <p>Die Worlds 2025 werden 24 Teams aus 11 verschiedenen Regionen umfassen, die über fünf Wochen um den Summoner's Cup und einen Preispool von 2,5 Millionen Dollar kämpfen.</p>
       
-      <h3>Play-In Stage (Week 1)</h3>
-      <p>The tournament kicks off with the Play-In Stage, where 12 teams will battle for the final four spots in the Group Stage. Teams will be divided into two groups of six, with the top two from each group advancing directly, and teams ranked 3rd and 4th competing in a knockout bracket.</p>
+      <div class="tournament-phase">
+        <h3>🎯 Play-In Stage (Woche 1)</h3>
+        <p>Das Turnier startet mit der Play-In Stage, wo 12 Teams um die letzten vier Plätze in der Gruppenphase kämpfen werden. Die Teams werden in zwei Gruppen zu je sechs aufgeteilt. Die Top 2 jeder Gruppe qualifizieren sich direkt, während die Teams auf Platz 3 und 4 in einem Knockout-Bracket antreten.</p>
+        <div class="phase-details">
+          <p><strong>📊 Format:</strong> 2 Gruppen mit je 6 Teams<br>
+          <strong>✅ Qualifikation:</strong> Top 2 direkt + Knockout für Platz 3-4</p>
+        </div>
+      </div>
       
-      <h3>Group Stage (Week 2-3)</h3>
-      <p>16 teams will be split into four groups of four. Each team plays every other team in their group twice in a double round-robin format. The top two teams from each group advance to the Knockout Stage.</p>
+      <div class="tournament-phase">
+        <h3>🌍 Gruppenphase (Woche 2-3)</h3>
+        <p>16 Teams werden in vier Gruppen zu je vier Teams aufgeteilt. Jedes Team spielt gegen jedes andere Team in seiner Gruppe zweimal im Doppel-Round-Robin-Format. Die Top 2 Teams jeder Gruppe erreichen die Knockout-Stage.</p>
+        <div class="phase-details">
+          <p><strong>📊 Format:</strong> 4 Gruppen mit je 4 Teams (Doppel-Round-Robin)<br>
+          <strong>✅ Qualifikation:</strong> Top 2 pro Gruppe</p>
+        </div>
+      </div>
       
-      <h3>Knockout Stage (Week 4-5)</h3>
-      <p>The final eight teams compete in a single-elimination bracket. All matches are best-of-five series, culminating in the Grand Finals.</p>
+      <div class="tournament-phase">
+        <h3>⚔️ Knockout-Stage (Woche 4-5)</h3>
+        <p>Die finalen acht Teams treten in einem Single-Elimination-Bracket an. Alle Matches sind Best-of-Five-Serien, die im großen Finale gipfeln.</p>
+        <div class="phase-details">
+          <p><strong>📊 Format:</strong> Single-Elimination Bracket<br>
+          <strong>🎮 Match-Format:</strong> Best-of-Five (Bo5)</p>
+        </div>
+      </div>
       
-      <h2>New Features for 2025</h2>
+      <div class="section-divider"></div>
       
-      <h3>Fearless Draft</h3>
-      <p>For the first time at Worlds, we're implementing Fearless Draft in best-of-five series. Champions picked or banned in one game cannot be selected again in subsequent games of the same series. This will test team depth and strategic flexibility like never before.</p>
+      <h2>✨ Neue Features für 2025</h2>
       
-      <h3>Extended Broadcast</h3>
-      <p>We're expanding our broadcast with more pre-game analysis, player interviews, and behind-the-scenes content. Fans can enjoy up to 10 hours of daily coverage during the Group Stage.</p>
+      <div class="feature-highlight highlight-fearless">
+        <h3>🎲 Fearless Draft</h3>
+        <p>Zum ersten Mal bei Worlds implementieren wir Fearless Draft in Best-of-Five-Serien. Champions, die in einem Spiel gepickt oder gebannt wurden, können in nachfolgenden Spielen derselben Serie nicht erneut gewählt werden.</p>
+        <p class="feature-note">⚡ <em>Dies wird Team-Tiefe und strategische Flexibilität wie nie zuvor testen!</em></p>
+      </div>
       
-      <h3>Interactive Viewing Experience</h3>
-      <p>New viewing features include live stats overlays, multiple camera angles, and the ability to watch individual player perspectives during key moments.</p>
+      <div class="feature-highlight">
+        <h3>📺 Erweiterte Broadcast</h3>
+        <p>Wir erweitern unseren Broadcast mit mehr Pre-Game-Analysen, Spielerinterviews und Behind-the-Scenes-Content. Fans können bis zu 10 Stunden tägliche Coverage während der Gruppenphase genießen.</p>
+      </div>
       
-      <h2>Host Cities</h2>
-      <p>The tournament will take place across three iconic venues:</p>
-      <ul>
-        <li><strong>Play-In & Group Stage:</strong> Seoul, South Korea - The birthplace of esports</li>
-        <li><strong>Quarterfinals & Semifinals:</strong> Shanghai, China - Home to millions of League fans</li>
-        <li><strong>Finals:</strong> Paris, France - A fitting finale in the City of Lights</li>
-      </ul>
+      <div class="feature-highlight">
+        <h3>🎥 Interaktives Seherlebnis</h3>
+        <p>Neue Viewing-Features umfassen Live-Stats-Overlays, mehrere Kameraperspektiven und die Möglichkeit, individuelle Spielerperspektiven während Schlüsselmomenten zu verfolgen.</p>
+      </div>
       
-      <h2>Regional Qualification</h2>
-      <p>Each region's qualification process has been finalized:</p>
-      <ul>
-        <li>LPL (China): 4 seeds</li>
-        <li>LCK (Korea): 4 seeds</li>
-        <li>LEC (Europe): 3 seeds</li>
-        <li>LCS (North America): 3 seeds</li>
-        <li>PCS (Pacific): 2 seeds</li>
-        <li>VCS (Vietnam): 2 seeds</li>
-        <li>Other regions: 6 seeds combined</li>
-      </ul>
+      <div class="section-divider"></div>
       
-      <h2>Schedule</h2>
-      <p>Mark your calendars! The tournament runs from November 1st to December 5th, 2025. The Grand Finals will take place on December 5th at the Accor Arena in Paris.</p>
+      <h2>🌆 Austragungsorte</h2>
+      <p>Das Turnier findet an drei ikonischen Veranstaltungsorten statt:</p>
       
-      <p>This promises to be an unforgettable championship. May the best team win!</p>
+      <div class="venue-list">
+        <div class="venue-item">
+          <strong>🇰🇷 Seoul, Südkorea</strong> - Play-In & Gruppenphase
+          <p class="venue-desc">Die Geburtsstätte des Esports</p>
+        </div>
+        <div class="venue-item">
+          <strong>🇨🇳 Shanghai, China</strong> - Viertelfinale & Halbfinale
+          <p class="venue-desc">Heimat von Millionen League-Fans</p>
+        </div>
+        <div class="venue-item">
+          <strong>🇫🇷 Paris, Frankreich</strong> - Finale
+          <p class="venue-desc">Ein passendes Finale in der Stadt der Lichter</p>
+        </div>
+      </div>
+      
+      <div class="section-divider"></div>
+      
+      <h2>🎫 Regionale Qualifikation</h2>
+      <p>Der Qualifikationsprozess für jede Region wurde finalisiert:</p>
+      
+      <div class="qualification-grid">
+        <ul>
+          <li><strong>🇨🇳 LPL (China):</strong> 4 Seeds</li>
+          <li><strong>🇰🇷 LCK (Korea):</strong> 4 Seeds</li>
+          <li><strong>🇪🇺 LEC (Europa):</strong> 3 Seeds</li>
+          <li><strong>🇺🇸 LCS (Nordamerika):</strong> 3 Seeds</li>
+          <li><strong>🌏 PCS (Pazifik):</strong> 2 Seeds</li>
+          <li><strong>🇻🇳 VCS (Vietnam):</strong> 2 Seeds</li>
+          <li><strong>🌍 Andere Regionen:</strong> 6 Seeds kombiniert</li>
+        </ul>
+      </div>
+      
+      <div class="section-divider"></div>
+      
+      <h2>📅 Zeitplan</h2>
+      <div class="schedule-box">
+        <p class="schedule-main"><strong>🗓️ Turnierdauer:</strong> 1. November - 5. Dezember 2025</p>
+        <p class="schedule-highlight"><strong>🏆 Großes Finale:</strong> 5. Dezember 2025 in der Accor Arena, Paris</p>
+      </div>
+      
+      <div class="closing-statement">
+        <p>Dies verspricht eine unvergessliche Championship zu werden. Möge das beste Team gewinnen! 🎮✨</p>
+      </div>
     `,
   };
 
@@ -153,16 +206,50 @@ export function NewsArticle2({ onBack, onNavigateToArticle }: NewsArticle2Props)
             {/* Article Content */}
             <div
               className="
-                prose prose-lg max-w-none text-slate-300
-                prose-headings:text-white prose-headings:font-bold
-                prose-h2:text-3xl prose-h2:mb-6 prose-h2:mt-12 prose-h2:text-white prose-h2:border-b prose-h2:border-amber-500/30 prose-h2:pb-4
-                prose-h3:text-2xl prose-h3:mb-4 prose-h3:mt-8 prose-h3:text-amber-400
-                prose-p:text-slate-300 prose-p:mb-6 prose-p:leading-relaxed prose-p:text-lg
-                prose-ul:text-slate-300 prose-ul:mb-6 prose-ul:space-y-2
-                prose-li:mb-3 prose-li:text-slate-300 prose-li:leading-relaxed
-                prose-strong:text-amber-400 prose-strong:font-semibold
-                prose-a:text-amber-500 prose-a:underline prose-a:hover:text-amber-400
-                [&>h2]:first-of-type:mt-0
+                article-content text-slate-300 max-w-none
+                [&_h2]:text-3xl [&_h2]:font-bold [&_h2]:mb-6 [&_h2]:mt-12 [&_h2]:text-white [&_h2]:border-b [&_h2]:border-amber-500/30 [&_h2]:pb-4
+                [&_h3]:text-2xl [&_h3]:font-bold [&_h3]:mb-4 [&_h3]:mt-8 [&_h3]:text-amber-400
+                [&_p]:text-slate-300 [&_p]:mb-6 [&_p]:leading-relaxed [&_p]:text-lg
+                [&_ul]:text-slate-300 [&_ul]:mb-6 [&_ul]:space-y-2 [&_ul]:list-none
+                [&_li]:mb-3 [&_li]:text-slate-300 [&_li]:leading-relaxed [&_li]:pl-6 [&_li]:relative
+                [&_li]:before:content-['•'] [&_li]:before:absolute [&_li]:before:left-0 [&_li]:before:text-purple-400 [&_li]:before:font-bold
+                [&_strong]:text-amber-400 [&_strong]:font-semibold
+                [&_em]:text-purple-400 [&_em]:not-italic
+                [&_a]:text-amber-500 [&_a]:underline hover:[&_a]:text-amber-400
+                [&>*:first-child]:mt-0
+                [&_.intro-highlight]:bg-gradient-to-r [&_.intro-highlight]:from-purple-500/10 [&_.intro-highlight]:to-transparent 
+                [&_.intro-highlight]:border-l-4 [&_.intro-highlight]:border-purple-500 [&_.intro-highlight]:pl-6 [&_.intro-highlight]:py-4 [&_.intro-highlight]:my-8 [&_.intro-highlight]:rounded-r
+                [&_.intro-highlight_p]:text-xl [&_.intro-highlight_p]:text-slate-200 [&_.intro-highlight_p]:mb-0
+                [&_.tournament-phase]:bg-slate-800/30 [&_.tournament-phase]:rounded-lg [&_.tournament-phase]:p-6 [&_.tournament-phase]:my-6
+                [&_.tournament-phase]:border [&_.tournament-phase]:border-slate-700/50
+                [&_.tournament-phase_h3]:mt-0 [&_.tournament-phase_h3]:text-2xl [&_.tournament-phase_h3]:font-bold [&_.tournament-phase_h3]:text-amber-400
+                [&_.tournament-phase_p]:mb-4
+                [&_.phase-details]:bg-slate-900/50 [&_.phase-details]:rounded [&_.phase-details]:p-4 [&_.phase-details]:mt-4
+                [&_.phase-details]:border [&_.phase-details]:border-slate-700/30
+                [&_.phase-details_p]:text-base [&_.phase-details_p]:mb-0 [&_.phase-details_p]:leading-relaxed
+                [&_.section-divider]:h-px [&_.section-divider]:bg-gradient-to-r [&_.section-divider]:from-transparent 
+                [&_.section-divider]:via-amber-500/30 [&_.section-divider]:to-transparent [&_.section-divider]:my-12
+                [&_.feature-highlight]:bg-slate-800/30 [&_.feature-highlight]:rounded-lg [&_.feature-highlight]:p-6 [&_.feature-highlight]:my-6
+                [&_.feature-highlight]:border [&_.feature-highlight]:border-slate-700/50
+                [&_.feature-highlight_h3]:mt-0 [&_.feature-highlight_h3]:text-2xl [&_.feature-highlight_h3]:font-bold [&_.feature-highlight_h3]:text-amber-400
+                [&_.feature-highlight_p]:mb-4
+                [&_.highlight-fearless]:border-l-4 [&_.highlight-fearless]:border-purple-500 [&_.highlight-fearless]:bg-purple-500/5
+                [&_.feature-note]:text-base [&_.feature-note]:text-amber-400/90 [&_.feature-note]:italic [&_.feature-note]:mt-4
+                [&_.venue-list]:grid [&_.venue-list]:gap-4 [&_.venue-list]:my-6
+                [&_.venue-item]:bg-slate-800/30 [&_.venue-item]:rounded-lg [&_.venue-item]:p-5 [&_.venue-item]:border [&_.venue-item]:border-slate-700/50
+                [&_.venue-item_strong]:text-amber-400 [&_.venue-item_strong]:text-lg [&_.venue-item_strong]:block [&_.venue-item_strong]:mb-2
+                [&_.venue-desc]:text-slate-400 [&_.venue-desc]:text-base [&_.venue-desc]:mb-0 [&_.venue-desc]:mt-1
+                [&_.qualification-grid]:bg-slate-800/20 [&_.qualification-grid]:rounded-lg [&_.qualification-grid]:p-6 
+                [&_.qualification-grid]:border [&_.qualification-grid]:border-slate-700/30
+                [&_.qualification-grid_ul]:grid [&_.qualification-grid_ul]:md:grid-cols-2 [&_.qualification-grid_ul]:gap-x-8 [&_.qualification-grid_ul]:mb-0
+                [&_.schedule-box]:bg-gradient-to-r [&_.schedule-box]:from-amber-500/10 [&_.schedule-box]:to-purple-500/10 
+                [&_.schedule-box]:border [&_.schedule-box]:border-amber-500/30 [&_.schedule-box]:rounded-lg [&_.schedule-box]:p-6
+                [&_.schedule-box_p]:mb-0
+                [&_.schedule-main]:text-lg [&_.schedule-main]:mb-3
+                [&_.schedule-highlight]:text-xl [&_.schedule-highlight]:text-amber-400 [&_.schedule-highlight]:mb-0
+                [&_.closing-statement]:bg-gradient-to-r [&_.closing-statement]:from-purple-500/10 [&_.closing-statement]:to-transparent 
+                [&_.closing-statement]:border-l-4 [&_.closing-statement]:border-purple-500 [&_.closing-statement]:pl-6 [&_.closing-statement]:py-4 [&_.closing-statement]:mt-12 [&_.closing-statement]:rounded-r
+                [&_.closing-statement_p]:text-lg [&_.closing-statement_p]:text-slate-200 [&_.closing-statement_p]:mb-0 [&_.closing-statement_p]:font-medium
               "
               dangerouslySetInnerHTML={{ __html: featuredArticle.content }}
             />
